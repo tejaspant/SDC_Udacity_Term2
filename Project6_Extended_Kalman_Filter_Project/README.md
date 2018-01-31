@@ -15,6 +15,20 @@ In this project, we implement the extended Kalman filter in C++ using provided L
 
 [image1]: ./write_up_images/snapshot_simulator.png "snapshot_simulator"
 
+## Dependencies
+---
+* cmake >= v3.5
+* make >= v4.1
+* gcc/g++ >= v5.4
+
+## Instructions to Run
+---
+Clone this repo.
+Make a build directory: mkdir build && cd build
+Compile: cmake .. && make
+Run Simulator: Clone Term 2 Simulator (https://github.com/udacity/self-driving-car-sim/releases/) and run it
+Run it: ./ExtendedKF 
+
 ## Result
 ---
 Currently the results are reported only for Dataset 1
