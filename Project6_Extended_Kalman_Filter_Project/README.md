@@ -23,11 +23,11 @@ In this project, we implement the extended Kalman filter in C++ using provided L
 
 ## Instructions to Run
 ---
-Clone this repo.
-Make a build directory: mkdir build && cd build
-Compile: cmake .. && make
-Run Simulator: Clone Term 2 Simulator (https://github.com/udacity/self-driving-car-sim/releases/) and run it
-Run it: ./ExtendedKF 
+* Clone this repo.
+* Make a build directory: mkdir build && cd build
+* Compile: cmake .. && make
+* Run Simulator: Clone Term 2 Simulator (https://github.com/udacity/self-driving-car-sim/releases/) and run it
+* Run it: ./ExtendedKF 
 
 ## Result
 ---
