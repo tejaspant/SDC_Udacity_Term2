@@ -31,7 +31,7 @@ In this project, we implement the extended Kalman filter in C++ using provided L
 
 ## Result
 ---
-Currently the results are reported only for Dataset 1
+Currently the results are reported only for Dataset 1.
 The RMSE values for X, Y, VX and VY are always less than 0.11, 0.11, 0.52 and 0.52 respectively along the entire length of the path. 
 The final values of RMSE are:
 
