@@ -7,7 +7,7 @@ In this project, we implement the unscented Kalman filter in C++ using provided 
 
 * Read the LIDAR and RADAR measurements
 * Implement the unscented Kalman filter for LIDAR measurements and extended Kalman filter for RADAR measurements 
-* Experiment with process noise parameters 
+* Experiment with process noise parameters \sigma
 * Compare the predicted path with the ground truth results and calculate the Root Mean Square Error (RMSE)
 * RMSE Error should be less than [0.09, 0.10, 0.4, 0.3] for the x location (X), y location (Y), x velocity (VX) and y velocity (VY) respectively
 
@@ -21,14 +21,16 @@ In this project, we implement the unscented Kalman filter in C++ using provided 
 ## Result
 ---
 Currently the results are reported only for Dataset 1
-The RMSE values for X, Y, VX and VY are always less than 0.11, 0.11, 0.52 and 0.52 respectively along the entire length of the path. 
+The RMSE values for X, Y, VX and VY are always less than 0.09, 0.10, 0.4 and 0.3 respectively along the entire length of the path. 
 The final values of RMSE are:
 
 | Quantity         		|     RMSE	        							|
 |:---------------------:|:---------------------------------------------:|
-| X         			| 0.0974   										|
-| Y				     	| 0.0855									 	|
-| VX					| 0.4517										|
-| VY	      			| 0.4404 										|
+| X         			| 0.0745   										|
+| Y				     	| 0.0805									 	|
+| VX					| 0.2767										|
+| VY	      			| 0.2438 										|
 
 ![alt text][image1]
+![alt text][image2]
+![alt text][image3]
