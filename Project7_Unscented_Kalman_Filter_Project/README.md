@@ -30,7 +30,7 @@ In this project, we implement the unscented Kalman filter in C++ using provided 
 * Make a build directory: mkdir build && cd build
 * Compile: cmake .. && make
 * Run Simulator: Clone [Term 2 Simulator](https://github.com/udacity/self-driving-car-sim/releases/) and run it
-* Run Code: ./ExtendedKF 
+* Run Code: ./UnscentedKF 
 
 ## Selection of Process Noise Parameters
 The process noise parameters for the longitudinal acceleration and yaw acceleration are finalized based on the NIS plots. The parameters are adjusted so that around 80% of the NIS values are between 0.35 and 7.815 for RADAR and between 0.35 and 5.991 for LIDAR The final values of standard deviation for longitudinal and yaw acceleration are 1.5 and 0.3 respectively and the NIS for the different time steps for RADAR and LIDAR are shown below. 
