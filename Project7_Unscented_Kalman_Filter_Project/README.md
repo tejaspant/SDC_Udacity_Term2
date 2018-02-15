@@ -33,7 +33,7 @@ In this project, we implement the unscented Kalman filter in C++ using provided 
 * Run Code: ./UnscentedKF 
 
 ## Selection of Process Noise Parameters
-The process noise parameters for the longitudinal acceleration and yaw acceleration are finalized based on the NIS plots. The parameters are adjusted so that around 80% of the NIS values are between 0.35 and 7.815 for RADAR and between 0.35 and 5.991 for LIDAR The final values of standard deviation for longitudinal and yaw acceleration are 1.5 and 0.3 respectively and the NIS for the different time steps for RADAR and LIDAR are shown below. 
+The process noise parameters for the longitudinal acceleration and yaw acceleration are finalized based on the NIS plots. The parameters are adjusted so that around 80% of the NIS values are between 0.35 and 7.815 for RADAR (3 DOF) and between 0.35 and 5.991 for LIDAR (2 DOF). The values 7.815 and 5.991 for RADAR and LIDAR are selected based on the chi square distribution. The final values of standard deviation for longitudinal and yaw acceleration are 1.5 and 0.3 respectively and the NIS for the different time steps for RADAR and LIDAR are shown below. 
 ![alt text][image2]
 
 ## Result
