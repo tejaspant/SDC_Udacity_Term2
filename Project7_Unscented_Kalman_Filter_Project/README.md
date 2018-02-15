@@ -7,11 +7,10 @@ In this project, we implement the unscented Kalman filter in C++ using provided 
 
 * Read the LIDAR and RADAR measurements
 * Implement the unscented Kalman filter for LIDAR measurements and extended Kalman filter for RADAR measurements 
-* Experiment with process noise parameters corresponding to longitudinal acceleration \alpha<tab> and yaw acceleration 
+* Experiment with process noise parameters corresponding to longitudinal acceleration and yaw acceleration 
 * Compare the predicted path with the ground truth results and calculate the Root Mean Square Error (RMSE)
 * RMSE Error should be less than [0.09, 0.10, 0.4, 0.3] for the x location (X), y location (Y), x velocity (VX) and y velocity (VY) respectively
 
-$$x_{1,2} = \frac{-b \pm \sqrt{b^2-4ac}}{2b}.$$
 [//]: # (Image References)
 
 [image1]: ./write_up_images/screenshot_sim.png "snapshot_simulator"
@@ -33,8 +32,10 @@ $$x_{1,2} = \frac{-b \pm \sqrt{b^2-4ac}}{2b}.$$
 * Run Simulator: Clone [Term 2 Simulator](https://github.com/udacity/self-driving-car-sim/releases/) and run it
 * Run Code: ./ExtendedKF 
 
+
 ## Result
 ---
+$\alpha$
 Currently the results are reported only for Dataset 1
 The RMSE values for X, Y, VX and VY are always less than 0.09, 0.10, 0.4 and 0.3 respectively along the entire length of the path. 
 The final values of RMSE are:
@@ -47,5 +48,5 @@ The final values of RMSE are:
 | VY	      			| 0.2438 										|
 
 ![alt text][image1]
-![alt text][image2]
 ![alt text][image3]
+![alt text][image2]
