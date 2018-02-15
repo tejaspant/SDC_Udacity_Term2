@@ -11,7 +11,7 @@ In this project, we implement the unscented Kalman filter in C++ using provided 
 * Compare the predicted path with the ground truth results and calculate the Root Mean Square Error (RMSE)
 * RMSE Error should be less than [0.09, 0.10, 0.4, 0.3] for the x location (X), y location (Y), x velocity (VX) and y velocity (VY) respectively
 
-
+$$x_{1,2} = \frac{-b \pm \sqrt{b^2-4ac}}{2b}.$$
 [//]: # (Image References)
 
 [image1]: ./write_up_images/screenshot_sim.png "snapshot_simulator"
