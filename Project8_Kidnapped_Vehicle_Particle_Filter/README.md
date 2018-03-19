@@ -3,7 +3,7 @@
 
 ## Overview
 ---
-In this project, we implement a 2D particle filter to help escape a kidnapped robot. The particle filter is implemented in C++ using a given map data, initial estimate of position from GPS data and observation and control data (velocity and yaw rate) at every time step.
+In this project, we implement a 2D particle filter to help escape a kidnapped robot. The particle filter is implemented in C++ using given map data, initial estimate of position from GPS data and observation and control data (velocity and yaw rate) at every time step.
 
 [//]: # (Image References)
 
