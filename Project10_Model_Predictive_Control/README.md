@@ -30,7 +30,7 @@ The state vector includes the x and y coorid
 
 As a part of the parametric study conducted for the MPC algorithm, we look at the effect of changing the number of time steps N and time step size dt.
 
-# Effect of Time Step Size (dt)
+### Effect of Time Step Size (dt)
 
 Here we maintain N and chnage dt.
 
@@ -40,7 +40,7 @@ Here we maintain N and chnage dt.
 | 20				     	| 0.2									 	| MPC predicts way into future. Car is able to navigate along the track but wheels pop out of the track at certian points.  |
 | 20					| 0.05										| The car cannot successfully navigate around the track. |
 
-# Effect of Number of Time Steps (N)
+### Effect of Number of Time Steps (N)
 
 Here we keep dt constant and the see the effect of changing N
 
