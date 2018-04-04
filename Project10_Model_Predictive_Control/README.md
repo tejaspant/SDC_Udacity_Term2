@@ -5,11 +5,12 @@
 
 ## Project: Model Predictive Control
 [![Udacity - Self-Driving Car NanoDegree](https://s3.amazonaws.com/udacity-sdc/github/shield-carnd.svg)](http://www.udacity.com/drive)
-![alt text][image2]
 
 ## Overview
 ---
 In this project, we design and implement a Model Predictive Control (MPC) algorithm to help navigate a car around a race track given the waypoints of the track.
+
+![alt text][image2]
 
 ## Dependencies
 ---
