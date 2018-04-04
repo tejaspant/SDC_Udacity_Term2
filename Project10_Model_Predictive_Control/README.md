@@ -26,11 +26,11 @@ In this project, we design and implement a Model Predictive Control (MPC) algori
 
 ## Implementation
 ---
-The state vector includes the x and y coordinates of the car, the orientation angle psi, velocity, cross track error cte and error in the orientation angle epsi. The time stepping in the MPC algorithm is done using the following set of equations: 
+The state vector for the kinematic model includes the x and y coordinates of the car, the orientation angle psi, velocity, cross track error cte and error in the orientation angle epsi. The time stepping in the MPC algorithm is done using the following set of equations: 
 
 ![alt text][image1]
 
-It should be noted that here that the x, y coordinates and psi are in the car coordinates. cte and epsi are calculated from polynomial fitting of the waypoints which are also converted into car coordinates. The actuators are the steering angle and throttle value.
+In the above equations the x, y coordinates and psi are in the car coordinates. cte and epsi are calculated from polynomial fitting of the waypoints which are also converted into car coordinates. The actuators are the steering angle and throttle value.
 
 As a part of the parametric study conducted for the MPC algorithm, we looked at the effect of changing the number of time steps N and time step size dt.
 ### Effect of Time Step Size (dt)
@@ -39,9 +39,9 @@ Here we maintain N and change dt.
 
 | N          		|     dt (sec)    | Result |
 |:---------------------:|:---------------------------------------------:|:---------------------------------------------:|
-| 20        			| 0.1   										| Final implementation parameters. The car is able to successfully navigate around the track.  |
-| 20				     	| 0.2									 	| Car is able to navigate along the track but wheels pop out of the track at certain points. This is because the MPC predicts signficantly into the future. |
-| 20					| 0.05										| The car cannot successfully navigate around the track. |
+| 10        			| 0.1   										| Final implementation parameters. The car is able to successfully navigate around the track.  |
+| 10				     	| 0.2									 	| Car is able to navigate along the track but wheels pop out of the track at certain points. This is because the MPC predicts signficantly into the future. |
+| 10					| 0.05										| The car cannot successfully navigate around the track. |
 
 ### Effect of Number of Time Steps (N)
 
@@ -52,6 +52,10 @@ Here we keep dt constant and the see the effect of changing N.
 | 0.1        			| 10  										| Final implementation parameters. The car is able to successfully navigate around the track.  |
 | 0.1				     	| 20									 	| The car cannot successfully navigate around the track.  |
 | 0.1					| 5										| The car cannot successfully navigate around the track. |
+
+A third order polynomial is fit to the waypoints using the polyfit function (see line 124 in main.cpp). This polynomial is useful in calculating cte and epsi. Before fitting the waypoints to the polynomial, the waypoints are converted to the car coordinates (see lines 102-115 in main.cpp).
+
+Latency is incorporated in the MPC algorithm by using the kinematic model to predict the state variables during the duration of the latency. The actuator values, steering angle and throttle value from the previous time step are used to propogate the car during the latency duration. The implmentation of the latency can be seen in lines 141-146 in main.cpp. The state variables after latency are then fed to the MPC algroithm (mpc.Solve) as initial conditions.
 
 ## Result
 ---
