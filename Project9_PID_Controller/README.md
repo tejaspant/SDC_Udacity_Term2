@@ -9,7 +9,7 @@
 ---
 In this project, we design and implement a proportional-integral-derivative (PID) controller to help navigate a car around a race track given the cross track error.
 
-![alt text][image2]
+![alt text][image1]
 
 ## Dependencies
 ---
