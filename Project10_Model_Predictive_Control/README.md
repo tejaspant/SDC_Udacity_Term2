@@ -26,13 +26,13 @@ In this project, we design and implement a Model Predictive Control (MPC) algori
 
 ## Implementation
 ---
-The state vector includes the x and y coorid
+The state vector includes the x and y coordinates, 
 
-As a part of the parametric study conducted for the MPC algorithm, I looked at the effect of changing the number of time steps N and time step size dt.
+As a part of the parametric study conducted for the MPC algorithm, we looked at the effect of changing the number of time steps N and time step size dt.
 
 ### Effect of Time Step Size (dt)
 
-Here we maintain N and chnage dt.
+Here we maintain N and change dt.
 
 | N          		|     dt (sec)    | Result |
 |:---------------------:|:---------------------------------------------:|:---------------------------------------------:|
@@ -42,7 +42,7 @@ Here we maintain N and chnage dt.
 
 ### Effect of Number of Time Steps (N)
 
-Here we keep dt constant and the see the effect of changing N
+Here we keep dt constant and the see the effect of changing N.
 
 |   dt (sec)    |     	 N     | Result |
 |:---------------------:|:---------------------------------------------:|:---------------------------------------------:|
