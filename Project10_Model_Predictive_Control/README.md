@@ -30,7 +30,7 @@ The state vector for the kinematic model includes the x and y coordinates of the
 
 ![alt text][image1]
 
-In the above equations the x, y coordinates and psi are in the car coordinates. cte and epsi are calculated from polynomial fitting of the waypoints which are also converted into car coordinates. The actuators are the steering angle and throttle value.
+In the above equations the x, y coordinates and psi are in the car coordinates. cte and epsi are calculated from polynomial fitting of the waypoints which are also converted into car coordinates. The actuators are the steering angle delta and throttle value a. The values of the steering value delta obtained from the simulator are multiplied by a factor of -1 before using in the above equations. The discussion of the -1 factor can be found in the project description. 
 
 As a part of the parametric study conducted for the MPC algorithm, we looked at the effect of changing the number of time steps N and time step size dt.
 ### Effect of Time Step Size (dt)
