@@ -26,9 +26,11 @@ In this project, we design and implement a Model Predictive Control (MPC) algori
 
 ## Implementation
 ---
-The state vector includes the x and y coordinates of the car, the orientation angle psi, velocity, cross track error and error in the orientation angle. 
+The state vector includes the x and y coordinates of the car, the orientation angle psi, velocity, cross track error cte and error in the orientation angle epsi. The time stepping in the MPC algorithm is done using the following set of equations: 
+
 ![alt text][image1]
-It should be noted that here that the x, y coordinates and the orientation angle are
+
+It should be noted that here that the x, y coordinates and psi are in the car coordinates. cte and epsi are calculated from polynomial fitting of the waypoints which are also converted into car coordinates. The actuators are the steering angle and throttle value.
 
 As a part of the parametric study conducted for the MPC algorithm, we looked at the effect of changing the number of time steps N and time step size dt.
 ### Effect of Time Step Size (dt)
