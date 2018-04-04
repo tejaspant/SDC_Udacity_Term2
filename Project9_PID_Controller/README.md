@@ -1,3 +1,7 @@
+[//]: # (Image References)
+
+[image1]: ./write_up_images/snapshot_sim.png "sim"
+
 ## Project: PID Controller
 [![Udacity - Self-Driving Car NanoDegree](https://s3.amazonaws.com/udacity-sdc/github/shield-carnd.svg)](http://www.udacity.com/drive)
 
@@ -5,9 +9,7 @@
 ---
 In this project, we design and implement a proportional-integral-derivative (PID) controller to help navigate a car around a race track given the cross track error.
 
-[//]: # (Image References)
-
-[image1]: ./write_up_images/success.png "success"
+![alt text][image2]
 
 ## Dependencies
 ---
