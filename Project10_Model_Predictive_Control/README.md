@@ -29,7 +29,7 @@ In this project, we design and implement a Model Predictive Control (MPC) algori
 The state vector includes the x and y coorid
 
 | Number of Time Steps (N)         		|     Time Step Size	     | Result |
-|:---------------------:|:---------------------------------------------:|
+|:---------------------:|:---------------------------------------------:|:---------------------------------------------:|
 | 20        			| 0.1   										| Final implementation parameters. The car navigates well.  |
 | 20				     	| 0.2									 	| MPC predicts way into future. Car is able to navigate along the track but wheels pop out of the track at certian points.  |
 | 20					| 0.05										| The car cannot navigate along the track successfully |
