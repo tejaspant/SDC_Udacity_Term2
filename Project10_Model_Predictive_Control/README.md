@@ -28,11 +28,27 @@ In this project, we design and implement a Model Predictive Control (MPC) algori
 ---
 The state vector includes the x and y coorid
 
-| Number of Time Steps (N)         		|     Time Step Size	     | Result |
+As a part of the parametric study conducted for the MPC algorithm, we look at the effect of changing the number of time steps N and time step size dt.
+
+# Effect of Time Step Size (dt)
+
+Here we maintain N and chnage dt.
+
+| N          		|     dt (sec)    | Result |
 |:---------------------:|:---------------------------------------------:|:---------------------------------------------:|
-| 20        			| 0.1   										| Final implementation parameters. The car navigates well.  |
+| 20        			| 0.1   										| Final implementation parameters. The car is able to successfully navigate around the track.  |
 | 20				     	| 0.2									 	| MPC predicts way into future. Car is able to navigate along the track but wheels pop out of the track at certian points.  |
-| 20					| 0.05										| The car cannot navigate along the track successfully |
+| 20					| 0.05										| The car cannot successfully navigate around the track. |
+
+# Effect of Number of Time Steps (N)
+
+Here we keep dt constant and the see the effect of changing N
+
+|   dt (sec)    |     	 N     | Result |
+|:---------------------:|:---------------------------------------------:|:---------------------------------------------:|
+| 0.1        			| 10  										| Final implementation parameters. The car is able to successfully navigate around the track.  |
+| 0.1				     	| 20									 	| The car cannot successfully navigate around the track.  |
+| 0.1					| 5										| The car cannot successfully navigate around the track. |
 
 ## Result
 ---
