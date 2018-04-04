@@ -26,5 +26,4 @@ In this project, we design and implement a proportional-integral-derivative (PID
 
 ## Result
 ---
-The number of particles used are 50. With 50 particles the errors in x, y and yaw are below the required levels. On running ./run.sh in the terminal, the output "Success!Your particle filter passed!" is obtained.
-![alt text][image1]
+The video of the final implementation of the PID controller can be found [here](https://www.youtube.com/watch?v=t1KleOY2bzE&t=6s).
